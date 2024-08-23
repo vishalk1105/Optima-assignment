@@ -1,0 +1,46 @@
+main {
+  width: 100%;
+  padding: 10px;
+  overflow: auto;
+  height: calc(100% - 62px);
+  position: absolute;
+  top: 50px;
+}
+
+.link {
+  display: flex;
+  color: #fff;
+  gap: 15px;
+  transition: all 0.5s;
+}
+
+.link:hover {
+  text-decoration: underline !important;
+  transition: all 0.5s;
+}
+
+.link_text {
+  font-size: 20px;
+}
+.activeNav {
+  text-decoration: underline;
+}
+
+.footer {
+  z-index: 5 !important;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.logo {
+  width: 40px;
+  margin-right: 10px;
+}
+.logoName {
+  font-size: 24px;
+}
+
+.profileLink:hover {
+  text-decoration: underline !important;
+}
