@@ -4,13 +4,16 @@ import Home from "../view/Home";
 import Login from "../view/Login";
 import SignUp from "../view/SignUp";
 import PrivateRoute from "./PrivateRoute";
+import RestrictedRoute from "./RestrictedRoute";
 
 const AppRoute = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/signUp" element={<SignUp />} />
+        <Route element={<RestrictedRoute />}>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signUp" element={<SignUp />} />
+        </Route>
         <Route element={<PrivateRoute />}>
           <Route path="/" element={<Home />} />
         </Route>

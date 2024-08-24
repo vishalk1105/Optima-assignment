@@ -15,13 +15,7 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg justify-content-between bg-dark fixed-top text-white px-4 py-2 ">
       <div className="container-fluid">
-        <div className="logoName">
-          {/* <span>
-            <img className="logo" src={logo} alt=" " />
-          </span>
-          */}
-          Optima Assignment
-        </div>
+        <div className="logoName">Optima Assignment</div>
         <button
           className="navbar-toggler"
           type="button"
